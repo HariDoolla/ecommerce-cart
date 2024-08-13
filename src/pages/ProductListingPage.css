@@ -1,0 +1,37 @@
+/* src/pages/ProductListing.css */
+.product-listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ensure cards fit */
+  gap: 10px; /* Space between items */
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 1024px) {
+  .product-listing {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-listing {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-listing {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust for extra-small screens */
+  }
+}
+/* src/pages/ProductListingPage.css */
+.product-listing {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Maintain card width */
+  gap: 10px; /* Space between cards */
+}
+
+.product-listing .product-card {
+  margin: 0; /* Remove margin for consistent layout */
+}
